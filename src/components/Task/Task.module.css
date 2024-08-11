@@ -1,0 +1,18 @@
+.task {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px; /* добавим отступы внутри контейнера */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%; /* Задаем ширину задачи */
+    box-sizing: border-box; /* Учитываем padding и border в ширине */
+}
+
+.text {
+    max-width: 60%; 
+    overflow-wrap: break-word; /* Перенос длинных слов на следующую строку */
+    word-wrap: break-word; /* Для совместимости с устаревшими браузерами */
+    white-space: pre-wrap; /* Сохраняем пробелы и переносы строк */
+}
